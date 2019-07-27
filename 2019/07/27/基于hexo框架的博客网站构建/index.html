@@ -5,22 +5,22 @@
   
 
   
-  <title>基于hexo框架的博客网站构建 | Hexo</title>
+  <title>基于hexo框架的博客网站构建 | CHEN Zhangxuan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。">
 <meta name="keywords" content="hexo, blog, git, node.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于hexo框架的博客网站构建">
 <meta property="og:url" content="http://yoursite.com/2019/07/27/基于hexo框架的博客网站构建/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="CHEN Zhangxuan的博客">
 <meta property="og:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-27T05:21:57.110Z">
+<meta property="og:locale" content="Chinese, English">
+<meta property="og:updated_time" content="2019-07-27T05:31:58.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于hexo框架的博客网站构建">
 <meta name="twitter:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="CHEN Zhangxuan的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -39,7 +39,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">CHEN Zhangxuan的博客</a>
       </h1>
       
     </div>
@@ -118,15 +118,16 @@
 </ul>
 <h3 id="远端部署"><a href="#远端部署" class="headerlink" title="远端部署"></a>远端部署</h3><h4 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h4><h6 id="1-新建仓库"><a href="#1-新建仓库" class="headerlink" title="1. 新建仓库"></a>1. 新建仓库</h6><p>仓库名必须为：用户名.github.io<br>用户部署个人博客的github仓库需符合要求</p>
 <h6 id="2-安装git部属用插件deployer："><a href="#2-安装git部属用插件deployer：" class="headerlink" title="2. 安装git部属用插件deployer："></a>2. 安装git部属用插件deployer：</h6><ul>
-<li><p>Linux/git bash上：</p>
+<li>Linux/git bash上：</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>通过windows中cmd：</p>
+
+<ul>
+<li>通过windows中cmd：</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 
-</li>
-</ul>
 <h6 id="3-设置-config-yml"><a href="#3-设置-config-yml" class="headerlink" title="3. 设置_config.yml"></a>3. 设置_config.yml</h6><p>更改Deployment：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 仓库地址.git</span><br><span class="line">  branch：master</span><br></pre></td></tr></table></figure>
 
@@ -138,18 +139,20 @@
 
 <p>该标签之上的文本为摘要，即需要点击阅读全文才能查看剩余的内容。另外也可以在_config.yml中设置每页显示的文章数。</p>
 <h5 id="2-hexo文章中的引用"><a href="#2-hexo文章中的引用" class="headerlink" title="2. hexo文章中的引用"></a>2. hexo文章中的引用</h5><p>一般Hexo网页编辑可使用markdown的语法，但也有特殊的文本块与标签的使用方法，具体可参考附录3。</p>
+<h5 id="3-hexo目录结构"><a href="#3-hexo目录结构" class="headerlink" title="3. hexo目录结构"></a>3. hexo目录结构</h5><p>见附录5.</p>
 <hr>
-<h4 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h4><ul>
+<h4 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h4><ol>
 <li><a href="https://www.bilibili.com/video/av44544186/index_1.html" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186/index_1.html</a></li>
 <li><a href="https://www.jianshu.com/p/495ed3ef6d01" target="_blank" rel="noopener">https://www.jianshu.com/p/495ed3ef6d01</a></li>
 <li><a href="https://www.jianshu.com/p/56e879ddcf6c" target="_blank" rel="noopener">https://www.jianshu.com/p/56e879ddcf6c</a></li>
 <li><a href="https://blog.csdn.net/qq_32337109/article/details/78755662" target="_blank" rel="noopener">https://blog.csdn.net/qq_32337109/article/details/78755662</a></li>
-</ul>
+<li><a href="https://blog.csdn.net/abc_12366/article/details/87864623" target="_blank" rel="noopener">https://blog.csdn.net/abc_12366/article/details/87864623</a></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/27/基于hexo框架的博客网站构建/" data-id="cjyl388oz0001l8vmngjnwfqq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/27/基于hexo框架的博客网站构建/" data-id="cjyl3ljxc0001dwvmzfnlqagf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-blog-git-node-js/">hexo, blog, git, node.js</a></li></ul>
@@ -233,7 +236,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
+      &copy; 2019 CHEN Zhangxuan的博客<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
