@@ -5,19 +5,20 @@
   
 
   
-  <title>My first blog | Hexo</title>
+  <title>基于hexo框架的博客网站构建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要你好，我的第一篇主页内容主体。">
+  <meta name="description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。前置安装 安装node.js检查是否安装成功：   node -v npm -v   安装git 在国内时，可将npm源转化为cnpm源：1npm install -g cnpm --registry-http://registry.npm.taobao.org    转为taobao源，-g表示全局安装。可通过13">
+<meta name="keywords" content="hexo, blog, git, node.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My first blog">
+<meta property="og:title" content="基于hexo框架的博客网站构建">
 <meta property="og:url" content="http://yoursite.com/2019/07/27/My-first-blog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="摘要你好，我的第一篇主页内容主体。">
+<meta property="og:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。前置安装 安装node.js检查是否安装成功：   node -v npm -v   安装git 在国内时，可将npm源转化为cnpm源：1npm install -g cnpm --registry-http://registry.npm.taobao.org    转为taobao源，-g表示全局安装。可通过13">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-27T02:31:08.665Z">
+<meta property="og:updated_time" content="2019-07-27T04:25:05.664Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My first blog">
-<meta name="twitter:description" content="摘要你好，我的第一篇主页内容主体。">
+<meta name="twitter:title" content="基于hexo框架的博客网站构建">
+<meta name="twitter:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。前置安装 安装node.js检查是否安装成功：   node -v npm -v   安装git 在国内时，可将npm源转化为cnpm源：1npm install -g cnpm --registry-http://registry.npm.taobao.org    转为taobao源，-g表示全局安装。可通过13">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -78,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      My first blog
+      基于hexo框架的博客网站构建
     </h1>
   
 
@@ -86,13 +87,53 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><h2 id="你好，我的第一篇"><a href="#你好，我的第一篇" class="headerlink" title="你好，我的第一篇"></a>你好，我的第一篇</h2><h2 id="主页内容"><a href="#主页内容" class="headerlink" title="主页内容"></a>主页内容</h2><h2 id="主体。"><a href="#主体。" class="headerlink" title="主体。"></a>主体。</h2>
+        <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><h2 id="本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。"><a href="#本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。" class="headerlink" title="本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。"></a>本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。</h2><h3 id="前置安装"><a href="#前置安装" class="headerlink" title="前置安装"></a>前置安装</h3><ol>
+<li>安装node.js<br>检查是否安装成功：</li>
+</ol>
+<ul>
+<li>node -v</li>
+<li>npm -v</li>
+</ul>
+<ol start="2">
+<li>安装git</li>
+<li>在国内时，可将npm源转化为cnpm源：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry-http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>转为taobao源，-g表示全局安装。可通过<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3. 安装hexo框架： ```cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<h3 id="实际搭建"><a href="#实际搭建" class="headerlink" title="实际搭建"></a>实际搭建</h3><ol>
+<li><p>新建hexo项目于相应项目文件夹中：<figure class="highlight plain"><figcaption><span>init```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2. 通过```hexo s```命令进行启动/预览，网址：http://localhost:4000</span><br><span class="line">3. 新建一篇文章：```hexo new &quot;post name&quot;</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>清理数据库：<figure class="highlight plain"><figcaption><span>clean```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5. 生成新网页：```hexo g</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>更换网页主题/自定义主题</p>
+</li>
+</ol>
+<ul>
+<li>下载主题 git clone 主题网址.git themes/文件夹名</li>
+<li>修改_config.yml<br>更改Extensions<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 远端部署</span><br><span class="line">#### github部署</span><br><span class="line">1. 新建仓库</span><br><span class="line">仓库名必须为：用户名.github.io</span><br><span class="line">用户部署个人博客的github仓库需符合要求</span><br><span class="line"></span><br><span class="line">2. 安装git部属用插件： </span><br><span class="line">- ```cnpm install --save hexo-deployer-git``` (linux/git bash)</span><br><span class="line">- ```cnpm install -hexo-deployer-git --save```(windows cmd) </span><br><span class="line">  </span><br><span class="line">3. 设置_config.yml</span><br><span class="line">更改Deployment：</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: 仓库地址.git<br>  branch：master</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4. 部署到远端：```hexo d</span><br></pre></td></tr></table></figure>
+
+<p>完成后即可通过repo主页进行博客网站的浏览，而不需要使用本地ip的端口。</p>
+<hr>
+<h4 id="摘要-1"><a href="#摘要-1" class="headerlink" title="摘要"></a>摘要</h4><blockquote>
+<ol>
+<li><a href="https://www.bilibili.com/video/av44544186/index_1.html" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186/index_1.html</a></li>
+</ol>
+</blockquote>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/27/My-first-blog/" data-id="cjykxdlc20001lwvmyifh47k2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/27/My-first-blog/" data-id="cjyl17mpb0001a4vm5s0hflpd" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-blog-git-node-js/">hexo, blog, git, node.js</a></li></ul>
+
     </footer>
   </div>
   
@@ -118,9 +159,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-blog-git-node-js/">hexo, blog, git, node.js</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/hexo-blog-git-node-js/" style="font-size: 10px;">hexo, blog, git, node.js</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -139,7 +194,7 @@
       <ul>
         
           <li>
-            <a href="/2019/07/27/My-first-blog/">My first blog</a>
+            <a href="/2019/07/27/My-first-blog/">基于hexo框架的博客网站构建</a>
           </li>
         
           <li>
