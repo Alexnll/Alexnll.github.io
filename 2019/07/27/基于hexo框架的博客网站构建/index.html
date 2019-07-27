@@ -7,18 +7,18 @@
   
   <title>基于hexo框架的博客网站构建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。 前置安装1. 安装node.js检查是否安装成功： 12node -vnpm -v  2. 安装git3. 在国内时，可将npm源转化为cnpm源：1npm install -g cnpm --registry-http://registry.npm.taobao.org  转为taobao源，-g表示全局安装。可">
+  <meta name="description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。">
 <meta name="keywords" content="hexo, blog, git, node.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于hexo框架的博客网站构建">
-<meta property="og:url" content="http://yoursite.com/2019/07/27/My-first-blog/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/07/27/基于hexo框架的博客网站构建/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。 前置安装1. 安装node.js检查是否安装成功： 12node -vnpm -v  2. 安装git3. 在国内时，可将npm源转化为cnpm源：1npm install -g cnpm --registry-http://registry.npm.taobao.org  转为taobao源，-g表示全局安装。可">
+<meta property="og:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-27T04:51:34.476Z">
+<meta property="og:updated_time" content="2019-07-27T05:21:57.110Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于hexo框架的博客网站构建">
-<meta name="twitter:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。 前置安装1. 安装node.js检查是否安装成功： 12node -vnpm -v  2. 安装git3. 在国内时，可将npm源转化为cnpm源：1npm install -g cnpm --registry-http://registry.npm.taobao.org  转为taobao源，-g表示全局安装。可">
+<meta name="twitter:description" content="摘要本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -65,9 +65,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-My-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-基于hexo框架的博客网站构建" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/07/27/My-first-blog/" class="article-date">
+    <a href="/2019/07/27/基于hexo框架的博客网站构建/" class="article-date">
   <time datetime="2019-07-27T02:28:25.000Z" itemprop="datePublished">2019-07-27</time>
 </a>
     
@@ -88,6 +88,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>本文简略地介绍了如何基于hexo框架搭建一个简单的博客网站，并将其部署到远端。</p>
+<a id="more"></a>
 <h3 id="前置安装"><a href="#前置安装" class="headerlink" title="前置安装"></a>前置安装</h3><h6 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1. 安装node.js"></a>1. 安装node.js</h6><p>检查是否安装成功：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
@@ -132,17 +133,23 @@
 <h6 id="4-部署到远端："><a href="#4-部署到远端：" class="headerlink" title="4. 部署到远端："></a>4. 部署到远端：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <p>完成后即可通过repo主页进行博客网站的浏览，而不需要使用本地ip的端口。</p>
+<h3 id="文章标签设置"><a href="#文章标签设置" class="headerlink" title="文章标签设置"></a>文章标签设置</h3><h5 id="1-使hexo首页显示摘要显示"><a href="#1-使hexo首页显示摘要显示" class="headerlink" title="1. 使hexo首页显示摘要显示"></a>1. 使hexo首页显示摘要显示</h5><p>由于Hexo博客首页默认显示整篇博文，故可通过在文章内容中插入一行标签：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>该标签之上的文本为摘要，即需要点击阅读全文才能查看剩余的内容。另外也可以在_config.yml中设置每页显示的文章数。</p>
+<h5 id="2-hexo文章中的引用"><a href="#2-hexo文章中的引用" class="headerlink" title="2. hexo文章中的引用"></a>2. hexo文章中的引用</h5><p>一般Hexo网页编辑可使用markdown的语法，但也有特殊的文本块与标签的使用方法，具体可参考附录3。</p>
 <hr>
-<h4 id="摘要-1"><a href="#摘要-1" class="headerlink" title="摘要"></a>摘要</h4><blockquote>
-<ol>
+<h4 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h4><ul>
 <li><a href="https://www.bilibili.com/video/av44544186/index_1.html" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186/index_1.html</a></li>
-</ol>
-</blockquote>
+<li><a href="https://www.jianshu.com/p/495ed3ef6d01" target="_blank" rel="noopener">https://www.jianshu.com/p/495ed3ef6d01</a></li>
+<li><a href="https://www.jianshu.com/p/56e879ddcf6c" target="_blank" rel="noopener">https://www.jianshu.com/p/56e879ddcf6c</a></li>
+<li><a href="https://blog.csdn.net/qq_32337109/article/details/78755662" target="_blank" rel="noopener">https://blog.csdn.net/qq_32337109/article/details/78755662</a></li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/27/My-first-blog/" data-id="cjyl257yb0001dgvmu2dzqjyi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/27/基于hexo框架的博客网站构建/" data-id="cjyl388oz0001l8vmngjnwfqq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-blog-git-node-js/">hexo, blog, git, node.js</a></li></ul>
@@ -207,7 +214,7 @@
       <ul>
         
           <li>
-            <a href="/2019/07/27/My-first-blog/">基于hexo框架的博客网站构建</a>
+            <a href="/2019/07/27/基于hexo框架的博客网站构建/">基于hexo框架的博客网站构建</a>
           </li>
         
           <li>
